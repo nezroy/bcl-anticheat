@@ -1,0 +1,63 @@
+<settings>
+
+ <profiles>
+   <!-- ====================================================== -->
+   <!-- D A Y   P R O F I L E                                  -->
+   <!-- ====================================================== -->
+   <profile>
+       <id>day-central</id>
+       <activation>
+           <activeByDefault>true</activeByDefault>
+       </activation>
+       <repositories>
+         <repository>
+           <id>central</id>
+           <name>Adobe Proxy Repository</name>
+           <url>http://repo.adobe.com/nexus/content/groups/public</url>
+           <layout>default</layout>
+         </repository>
+
+
+         <repository>
+           <id>asf-snapshots</id>
+           <name>Apache Snapshots</name>
+           <url>http://repository.apache.org/snapshots/</url>
+           <layout>default</layout>
+         </repository>
+
+         <repository>
+           <id>fallback1</id>
+           <name>Fallback</name>
+           <url>http://repo1.maven.org/maven2/</url>
+           <layout>default</layout>
+         </repository>
+
+         <repository>
+           <id>fallback2</id>
+           <name>Fallback 2</name>
+           <url>http://repo2.maven.org/maven2/</url>
+           <layout>default</layout>
+         </repository>
+
+       </repositories>
+       <pluginRepositories>
+         <pluginRepository>
+           <id>central</id>
+           <name>Adobe Proxy Repository</name>
+           <url>http://repo.adobe.com/nexus/content/groups/public</url>
+           <layout>default</layout>
+         </pluginRepository>
+
+
+         <pluginRepository>
+           <id>fallback</id>
+           <name>Fallback</name>
+           <url>http://repo2.maven.org/maven2/</url>
+           <layout>default</layout>
+         </pluginRepository>
+       </pluginRepositories>
+   </profile>
+ </profiles>
+
+
+</settings>
